@@ -20,14 +20,23 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
+                test: /\.s?css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: [
-                        'css-loader'
-                    ]
+                    use: ['css-loader', 'postcss-loader', 'sass-loader']
                 })
-            }
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
+            },
         ]
     },
     plugins: [
@@ -35,12 +44,13 @@ module.exports = {
             filename: 'style.css'
         }),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src/index.html'),
-            filename: 'index.html'
+            filename: 'index.html',
+            chunks: ['index'],
+            template: path.resolve(__dirname, 'src/index.pug')
         })
     ],
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'docs'),
         port: 9090,
         historyApiFallback: true
     }
