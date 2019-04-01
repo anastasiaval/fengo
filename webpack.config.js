@@ -48,10 +48,18 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/,
+                test: /\.(png|jpe?g|gif)$/,
                 loader: 'file-loader',
                 options: {
                     name: 'img/[name].[ext]'
+                }
+            },
+            {
+                test: /\.(svg|ttf|woff)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'assets/fonts/'
                 }
             },
             {
