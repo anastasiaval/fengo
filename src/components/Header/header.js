@@ -1,2 +1,2 @@
-console.log('hello from header');
+import './header.scss';
 

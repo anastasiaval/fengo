@@ -1,5 +1,4 @@
-import './components/Header/header.scss';
-import './components/Header/header';
+import './assets/style.scss';
 
-console.log('hello world');
+import 'components/Header/header';
 
