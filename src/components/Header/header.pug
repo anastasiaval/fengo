@@ -1,2 +1,30 @@
-h1 hello
+header
+    .top-bar
+        .site-content
+            a.top-bar__link(href='#') My Account
+            a.top-bar__link(href='#') MY Wishlist (0)
+            a.top-bar__link(href='#') Checkout
+    .lang-currency
+        a#choose-currency.top-bar__link(href='#') US Dollar
+        a#choose-lang.top-bar__link(href='#') English
+    .logo
+        a.logo__text(href='#')
+            img(src=require('./img/logo1.png'), alt='Fengo')
+            | FENGO
+    .login
+        a.top-bar__link(href='#') Log In
+        span.top-bar__span or
+        a.top-bar__link(href='#') Register
+    form.search
+        input.search__input(type='search', placeholder='Find it here...')
+        button.search__button
+    .nav-cart
+        .navigation
+            .navigation__icon
+                .navigation__icon__elem
+                .navigation__icon__elem
+                .navigation__icon__elem
+            span.navigation__text Navigation
+        .cart
+            span.cart__sum $0.00
 
