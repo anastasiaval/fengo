@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 
@@ -20,15 +20,16 @@ const htmlPlugins = generateHtmlPlugins('./src/pages');
 
 module.exports = {
     entry: {
-        main: path.resolve(__dirname, 'src/index.js')
+        app: path.resolve(__dirname, 'src/index.js')
     },
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: 'main.js'
+        filename: '[name].js'
     },
     resolve: {
         alias: {
-            components: path.resolve(__dirname, 'src/components')
+            components: path.resolve(__dirname, 'src/components'),
+            assets: path.resolve(__dirname, 'src/assets')
         }
     },
     module: {
@@ -42,10 +43,7 @@ module.exports = {
             },
             {
                 test: /\.s?css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader', 'postcss-loader', 'sass-loader']
-                })
+                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
@@ -72,8 +70,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin({
-            filename: 'style.css'
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
         })
     ].concat(htmlPlugins),
     devServer: {
