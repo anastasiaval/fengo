@@ -106,12 +106,13 @@
   &__icon {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;}
-    &__elem {
+    margin-right: 5px;
+    &_elem {
       width: 16px;
       height: 3px;
       background-color: #666666;
       margin-bottom: 2px;}
+  }
 }
 
 .cart {
