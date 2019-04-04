@@ -1,17 +1,22 @@
 header
     .top-bar
-        .site-content
+        .top-bar__left
             a.top-bar__link(href='#') My Account
             a.top-bar__link(href='#') MY Wishlist (0)
             a.top-bar__link(href='#') Checkout
-    .lang-currency
-        a#choose-currency.top-bar__link(href='#') US Dollar
-        a#choose-lang.top-bar__link(href='#') English
+            a.for-768.top-bar__link(href='#') Log In
+        .for-768.top-bar__right
+            a.top-bar__link.choose-currency(href='#') US Dollar
+            a.top-bar__link.choose-lang(href='#') English
+            a.top-bar__link(href='#') My Bag: 0 item(s)
+    .for-320.lang-currency
+        a.top-bar__link.choose-currency(href='#') US Dollar
+        a.top-bar__link.choose-lang(href='#') English
     .logo
         a.logo__text(href='#')
             img(src=require('./img/logo1.png'), alt='Fengo')
             | FENGO
-    .login
+    .for-320.login
         a.top-bar__link(href='#') Log In
         span.top-bar__span or
         a.top-bar__link(href='#') Register
@@ -19,12 +24,20 @@ header
         input.search__input(type='search', placeholder='Find it here...')
         button.search__button
     .nav-cart
-        .navigation
+        .for-320.navigation
             .navigation__icon
                 .navigation__icon_elem
                 .navigation__icon_elem
                 .navigation__icon_elem
             span.navigation__text Navigation
-        .cart
+        .for-320.cart
             span.cart__sum $0.00
+    .menu
+        a(href='#') Fashion
+        a(href='#') Electronics
+        a(href='#') Gifts
+        a(href='#') Books
+        a(href='#') At Home
+        a(href='#') Music
+        a(href='#') Sale
 

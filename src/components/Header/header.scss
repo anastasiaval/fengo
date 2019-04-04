@@ -1,20 +1,16 @@
-/* 320px */
-
-.site-content {
-  margin: 0 20px;
+.top-bar {
   display: flex;
   justify-content: space-between;
-}
-
-.top-bar {
   background-color: #f6f6f6;
+  padding: 4px 20px;
   &__link {
     text-decoration: none;
     text-transform: uppercase;
+    white-space: nowrap;
     font-family: "MerriweatherSans-Regular", sans-serif;
     color: #7e7e7e;
     font-size: 11px;
-    line-height: 28px;}
+    padding: 6px 0 6px;}
   &__span {
     text-transform: uppercase;
     font-family: "MerriweatherSans-Regular", sans-serif;
@@ -23,6 +19,10 @@
     font-weight: 400;
     line-height: 19px;
     margin: 0 3px;}
+  &__left a {
+    margin-right: 15px;}
+  &__right a{
+    margin-left: 23px;}
 }
 
 .lang-currency {
@@ -30,24 +30,32 @@
   justify-content: space-evenly;
   margin-top: 9px;
   margin-bottom: 22px;
-  & a {
-    padding-right: 15px;
-  }
 }
 
-#choose-currency {
+.choose-currency {
   margin-left: 18px;
-  background: url("img/arrow-down.png") no-repeat 64px 11px;
+  padding-right: 15px;
+  background: url("img/arrow-down.png") no-repeat 64px 10px;
 }
 
-#choose-lang {
+.choose-lang {
   margin-right: 29px;
-  background: url("img/arrow-down.png") no-repeat 49px 11px;
+  padding-right: 15px;
+  background: url("img/arrow-down.png") no-repeat 49px 10px;
 }
 
 .logo {
   margin: 0 auto;
   width: fit-content;
+  &__text {
+    text-decoration: none;
+    font-family: MerriweatherSans-Bold, sans-serif;
+    color: #454545;
+    font-size: 44px;
+    margin-left: 4px;
+    & img{
+      margin-right: 8px;}
+  }
 }
 
 .login {
@@ -55,35 +63,25 @@
   width: fit-content;
 }
 
-.logo__text {
-  text-decoration: none;
-  font-family: MerriweatherSans-Bold, sans-serif;
-  color: #454545;
-  font-size: 44px;
-  font-weight: bold;
-  margin-left: 4px;
-  & img{
-    margin-right: 8px;}
-}
-
 .search {
   border: 1px solid #e1e1e1;
+  height: 38px;
   display: flex;
+  justify-content: space-between;
   margin: 0 20px;
   &__input {
     border: none;
     outline: none;
-    vertical-align: top;
     font-family: TrebuchetMS, sans-serif;
     font-size: 13px;
     width: 90%;
-    padding: 0 9px;
-    line-height:38px;}
+    padding: 0 9px;}
     &::placeholder {
       color: #888888;}
   &__button {
     padding: 19px;
     border: none;
+    outline: none;
     cursor: pointer;
     background: url('img/search-icon.png') no-repeat 11px;}
     &:hover {
@@ -120,5 +118,21 @@
   background: url('img/basket.png') no-repeat 0 -3px;
   &__sum {
     font-family: Cousine-Regular, sans-serif;}
+}
+
+.menu {
+  padding: 0 20px;
+  display: none;
+  justify-content: space-between;
+  & a {
+    font-family: Cousine-Bold, sans-serif;
+    text-decoration: none;
+    color:  #565656;
+    font-size: 14px;
+    text-transform: uppercase;}
+}
+
+.for-768 {
+  display: none;
 }
 
