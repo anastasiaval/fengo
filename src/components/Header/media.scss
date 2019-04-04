@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+.for-768 {
+  display: inline;}
+.for-320 {
+  display: none;}
+.top-bar__left a{
+  margin-right: 30px;}
+.choose-lang {
+  margin-right: 0;}
+.logo {
+  display: inline-flex;
+  margin-left: 18px;
+  margin-top: 25px;}
+.search {
+  width: 260px;
+  height: 34px;
+  display: inline-flex;
+  margin-top: 36px;
+  float: right;
+  &__button {
+    padding: 16px;
+    background-position: 8px;
+    &:hover {
+      background: #e1e1e1 url('img/search-icon.png') no-repeat 8px;}
+}}
+.menu {
+  display: flex;}
+}
+
