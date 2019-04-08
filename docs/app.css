@@ -192,6 +192,7 @@ html, body {
   justify-content: space-between;
   width: 100%; }
 
+
 @media (min-width: 768px) {
   .for-768 {
     display: inline; }
