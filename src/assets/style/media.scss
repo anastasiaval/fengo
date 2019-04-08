@@ -21,9 +21,55 @@
     padding: 16px;
     background-position: 8px;
     &:hover {
-      background: #e1e1e1 url('img/search-icon.png') no-repeat 8px;}
+      background: #e1e1e1 url('../../components/Header/img/search-icon.png') no-repeat 8px;}
 }}
 .menu {
   display: flex;}
+}
+
+@media (min-width: 980px) {
+  .for-980 {
+    display: inline;}
+  .logo-mobile {
+    display: none;
+  }
+  .menu {
+    width: 65.5%;
+    margin-top: 31px;
+  }
+  .logo-pc {
+    display: block;
+    margin-left: 16px;
+  }
+  .top-bar__span {
+    margin: 0 10px 0 -28px;
+  }
+  .top-bar__left a {
+    margin-right: 39px;
+  }
+  .choose-lang, .choose-currency {
+    padding-right: 25px;
+  }
+  .search {
+    margin-top: 15px;
+    margin-bottom: -10px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .top-bar, .nav-container {
+    padding-right: 7.2%;
+    padding-left: 7.2%;
+  }
+  .search {
+    margin-right: 7.2%;
+  }
+  .menu {
+    width: 56.4%;
+    padding: 0;
+  }
+  .logo-pc {
+    margin-left: -4px;
+  }
 }
 
