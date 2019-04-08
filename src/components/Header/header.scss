@@ -123,6 +123,7 @@
   padding: 0 20px;
   display: none;
   justify-content: space-between;
+  width: 100%;
   & a {
     font-family: Cousine-Bold, sans-serif;
     text-decoration: none;
@@ -131,7 +132,14 @@
     text-transform: uppercase;}
 }
 
-.for-768 {
+.for-768, .for-980 {
   display: none;
+}
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 

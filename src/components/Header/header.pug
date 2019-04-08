@@ -5,6 +5,8 @@ header
             a.top-bar__link(href='#') MY Wishlist (0)
             a.top-bar__link(href='#') Checkout
             a.for-768.top-bar__link(href='#') Log In
+            span.for-980.top-bar__span or
+            a.for-980.top-bar__link(href='#') Register
         .top-bar__right.for-768
             a.top-bar__link.choose-currency(href='#') US Dollar
             a.top-bar__link.choose-lang(href='#') English
@@ -12,7 +14,7 @@ header
     .lang-currency.for-320
         a.top-bar__link.choose-currency(href='#') US Dollar
         a.top-bar__link.choose-lang(href='#') English
-    .logo
+    .logo.logo-mobile
         a.logo__text(href='#')
             img(src=require('./img/logo1.png'), alt='Fengo')
             | FENGO
@@ -32,12 +34,17 @@ header
             span.navigation__text Navigation
         .cart.for-320
             span.cart__sum $0.00
-    .menu
-        a(href='#') Fashion
-        a(href='#') Electronics
-        a(href='#') Gifts
-        a(href='#') Books
-        a(href='#') At Home
-        a(href='#') Music
-        a(href='#') Sale
+    .nav-container
+        .logo-pc.for-980
+            a.logo__text(href='#')
+                img(src=require('./img/logo1.png'), alt='Fengo')
+                | FENGO
+        .menu
+            a(href='#') Fashion
+            a(href='#') Electronics
+            a(href='#') Gifts
+            a(href='#') Books
+            a(href='#') At Home
+            a(href='#') Music
+            a(href='#') Sale
 

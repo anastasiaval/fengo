@@ -176,7 +176,8 @@ html, body {
 .menu {
   padding: 0 20px;
   display: none;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%; }
   .menu a {
     font-family: Cousine-Bold, sans-serif;
     text-decoration: none;
@@ -184,8 +185,13 @@ html, body {
     font-size: 14px;
     text-transform: uppercase; }
 
-.for-768 {
+.for-768, .for-980 {
   display: none; }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
 
 @media (min-width: 768px) {
   .for-768 {
@@ -213,4 +219,25 @@ html, body {
         background: #e1e1e1 url(img/search-icon.png) no-repeat 8px; }
   .menu {
     display: flex; } }
+
+@media (min-width: 980px) {
+  .for-980 {
+    display: inline; }
+  .logo-mobile {
+    display: none; }
+  .menu {
+    width: 65.5%;
+    margin-top: 31px; }
+  .logo-pc {
+    display: block;
+    margin-left: 16px; }
+  .top-bar__span {
+    margin: 0 10px 0 -28px; }
+  .top-bar__left a {
+    margin-right: 39px; }
+  .choose-lang, .choose-currency {
+    padding-right: 25px; }
+  .search {
+    margin-top: 15px;
+    margin-bottom: -10px; } }
 
