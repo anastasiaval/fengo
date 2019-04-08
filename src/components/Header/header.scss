@@ -1,22 +1,23 @@
+@import "../../assets/style/variables";
+
 .top-bar {
   display: flex;
   justify-content: space-between;
-  background-color: #f6f6f6;
+  background-color: $bg-top;
   padding: 4px 20px;
   &__link {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
     font-family: "MerriweatherSans-Regular", sans-serif;
-    color: #7e7e7e;
+    color: $link-light;
     font-size: 11px;
     padding: 6px 0 6px;}
   &__span {
     text-transform: uppercase;
     font-family: "MerriweatherSans-Regular", sans-serif;
-    color: #7e7e7e;
+    color: $link-light;
     font-size: 11px;
-    font-weight: 400;
     line-height: 19px;
     margin: 0 7px;}
   &__left a {
@@ -50,7 +51,7 @@
   &__text {
     text-decoration: none;
     font-family: MerriweatherSans-Bold, sans-serif;
-    color: #454545;
+    color: $logo-text;
     font-size: 44px;
     margin-left: 4px;
     & img{
@@ -64,7 +65,7 @@
 }
 
 .search {
-  border: 1px solid #e1e1e1;
+  border: 1px solid $bd-standard;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -77,7 +78,7 @@
     width: 90%;
     padding: 0 9px;}
     &::placeholder {
-      color: #888888;}
+      color: $placeholder;}
   &__button {
     padding: 19px;
     border: none;
@@ -91,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  color: #565656;
+  color: $link-dark;
   align-items: center;
 }
 
@@ -107,7 +108,7 @@
     &_elem {
       width: 16px;
       height: 3px;
-      background-color: #666666;
+      background-color: $icon;
       margin-bottom: 2px;}
   }
 }
@@ -127,7 +128,7 @@
   & a {
     font-family: Cousine-Bold, sans-serif;
     text-decoration: none;
-    color:  #565656;
+    color:  $link-dark;
     font-size: 14px;
     text-transform: uppercase;}
 }

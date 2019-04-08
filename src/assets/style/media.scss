@@ -1,3 +1,5 @@
+@import "variables";
+
 @media (min-width: 768px) {
 .for-768 {
   display: inline;}
@@ -21,7 +23,7 @@
     padding: 16px;
     background-position: 8px;
     &:hover {
-      background: #e1e1e1 url('../../components/Header/img/search-icon.png') no-repeat 8px;}
+      background: $bd-standard url('../../components/Header/img/search-icon.png') no-repeat 8px;}
 }}
 .menu {
   display: flex;}
