@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   background-color: $bg-top;
-  padding: 4px 20px;
+  padding: 0 20px;
   &__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -20,6 +20,10 @@
     font-size: 11px;
     line-height: 19px;
     margin: 0 7px;}
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__left a {
     margin-right: 27px;}
   &__right a{
@@ -108,7 +112,7 @@
     &_elem {
       width: 16px;
       height: 3px;
-      background-color: $icon;
+      background-color: $icon-text;
       margin-bottom: 2px;}
   }
 }
@@ -136,7 +140,6 @@
 .for-768, .for-980 {
   display: none;
 }
-
 
 .nav-container {
   display: flex;
