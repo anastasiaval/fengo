@@ -58,7 +58,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   background-color: #f6f6f6;
-  padding: 4px 20px; }
+  padding: 0 20px; }
   .top-bar__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -74,6 +74,9 @@ html, body {
     font-size: 11px;
     line-height: 19px;
     margin: 0 7px; }
+  .top-bar__left {
+    display: flex;
+    flex-wrap: wrap; }
   .top-bar__left a {
     margin-right: 27px; }
   .top-bar__right a {
@@ -192,10 +195,104 @@ html, body {
   justify-content: space-between;
   width: 100%; }
 
+footer {
+  background: #1f1f1f; }
+
+.footer-bottom {
+  padding: 40px 20px; }
+  .footer-bottom__cards {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer-bottom__cards a {
+      text-decoration: none;
+      padding: 14px 22px;
+      border: 0;
+      outline: 0;
+      margin-right: 3px; }
+  .footer-bottom__social {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap; }
+    .footer-bottom__social a {
+      padding: 5px 8px;
+      border: 2px solid #999999;
+      margin: 0 5px 11px 0; }
+      .footer-bottom__social a img {
+        -webkit-filter: brightness(50%) sepia(100) saturate(0);
+                filter: brightness(50%) sepia(100) saturate(0); }
+    .footer-bottom__social:hover img {
+      -webkit-filter: none;
+              filter: none; }
+  .footer-bottom__copy {
+    font-family: ArialMT, sans-serif;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 8px;
+    margin-bottom: 30px; }
+
+.facebook:hover {
+  background: #3b5a9a; }
+
+.twitter:hover {
+  background: #67b5d3; }
+
+.social-2:hover {
+  background: #e78c2f; }
+
+.social-1:hover {
+  background: #3b5a9a; }
+
+.linked:hover {
+  background: #4975b6; }
+
+.social-3:hover {
+  background: #b6457a; }
+
+.skype:hover {
+  background: #3da5cc; }
+
+.mail:hover {
+  background: #4975b6; }
+
+#card-discover {
+  background: url(img/card-discover.png) no-repeat 0 0; }
+
+#card-american {
+  background: url(img/card-american.png) no-repeat 0 0; }
+
+#card-visa {
+  background: url(img/card-visa.png) no-repeat 0 0; }
+
+#card-master {
+  background: url(img/card-master.png) no-repeat 0 0; }
+
+#card-paypal {
+  background: url(img/card-paypal.png) no-repeat 0 0; }
+
+#card-maestro {
+  background: url(img/card-maestro.png) no-repeat 0 0; }
+
+.contact {
+  border-bottom: 1px dashed #2a2a2a;
+  padding: 40px 28px; }
+
+#back-to-top {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid #999999; }
+  #back-to-top img {
+    -webkit-filter: brightness(50%) sepia(100) saturate(0);
+            filter: brightness(50%) sepia(100) saturate(0); }
+  #back-to-top:hover {
+    background: #999999; }
+    #back-to-top:hover img {
+      -webkit-filter: none;
+              filter: none; }
 
 @media (min-width: 768px) {
   .for-768 {
-    display: inline; }
+    display: flex; }
   .for-320 {
     display: none; }
   .top-bar__left a {
@@ -218,7 +315,27 @@ html, body {
       .search__button:hover {
         background: #e1e1e1 url(img/search-icon.png) no-repeat 8px; }
   .menu {
-    display: flex; } }
+    display: flex; }
+  .footer-bottom__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .footer-bottom__social {
+    margin-top: 0;
+    width: 49%;
+    display: flex;
+    justify-content: space-between; }
+    .footer-bottom__social a {
+      margin: 0; }
+  .footer-bottom__back-to-top {
+    display: flex;
+    justify-content: center; }
+  .footer-bottom__cards {
+    width: 42%;
+    justify-content: space-between; }
+  .footer-bottom__copy {
+    font-size: 11px;
+    margin-top: -8px;
+    margin-bottom: 25px; } }
 
 @media (min-width: 980px) {
   .for-980 {
@@ -232,7 +349,7 @@ html, body {
     display: block;
     margin-left: 16px; }
   .top-bar__span {
-    margin: 0 10px 0 -28px; }
+    margin: 4px 10px 0 -28px; }
   .top-bar__left a {
     margin-right: 39px; }
   .choose-lang, .choose-currency {
