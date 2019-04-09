@@ -1,2 +1,105 @@
 @import "../../assets/style/variables";
 
+footer {
+  background: $bg-footer;
+}
+
+.footer-bottom {
+  padding: 40px 20px;
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    & a {
+      text-decoration: none;
+      padding: 14px 22px;
+      border: 0;
+      outline: 0;
+      margin-right: 3px;
+    }
+  }
+  &__social {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    & a {
+      padding: 5px 8px;
+      border: 2px solid #999999;
+      margin: 0 5px 11px 0;
+      & img{
+        filter: brightness(50%) sepia(100) saturate(0);}
+    }
+      &:hover img {
+          filter: none;}
+  }
+  &__copy {
+    font-family: ArialMT, sans-serif;
+    font-size: 12px;
+    color: $icon-text;
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+}
+
+.facebook:hover {
+  background: #3b5a9a;
+}
+.twitter:hover {
+  background: #67b5d3;
+}
+.social-2:hover {
+  background: #e78c2f;
+}
+.social-1:hover {
+  background: #3b5a9a;
+}
+.linked:hover {
+  background: #4975b6;
+}
+.social-3:hover {
+  background: #b6457a;
+}
+.skype:hover {
+  background: #3da5cc;
+}
+.mail:hover {
+  background: #4975b6;
+}
+#card-discover {
+  background: url('img/card-discover.png') no-repeat 0 0;
+}
+#card-american {
+  background: url('img/card-american.png') no-repeat 0 0;
+}
+#card-visa {
+  background: url('img/card-visa.png') no-repeat 0 0;
+}
+#card-master {
+  background: url('img/card-master.png') no-repeat 0 0;
+}
+#card-paypal {
+  background: url('img/card-paypal.png') no-repeat 0 0;
+}
+#card-maestro {
+  background: url('img/card-maestro.png') no-repeat 0 0;
+}
+
+.contact {
+  border-bottom: 1px dashed $separator;
+  padding: 40px 28px;
+}
+
+#back-to-top {
+  padding: 12px;
+  cursor: pointer;
+  border-radius:50px;
+  border: 2px solid $button-color;
+  & img{
+    filter: brightness(50%) sepia(100) saturate(0);}
+  &:hover {
+    background: $button-color;
+    & img {
+      filter: none;
+    }
+  }
+}
+
