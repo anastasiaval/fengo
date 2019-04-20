@@ -9,7 +9,7 @@ footer {
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    & a {
+    a {
       text-decoration: none;
       padding: 14px 22px;
       border: 0;
@@ -21,11 +21,11 @@ footer {
     margin-top: 22px;
     display: flex;
     flex-wrap: wrap;
-    & a {
+    a {
       padding: 5px 8px;
       border: 2px solid #999999;
       margin: 0 5px 11px 0;
-      & img{
+      img{
         filter: brightness(50%) sepia(100) saturate(0);}
     }
       &:hover img {
@@ -93,11 +93,11 @@ footer {
   cursor: pointer;
   border-radius:50px;
   border: 2px solid $button-color;
-  & img{
+  img{
     filter: brightness(50%) sepia(100) saturate(0);}
   &:hover {
     background: $button-color;
-    & img {
+    img {
       filter: none;
     }
   }

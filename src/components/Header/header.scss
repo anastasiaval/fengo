@@ -58,7 +58,7 @@
     color: $logo-text;
     font-size: 44px;
     margin-left: 4px;
-    & img{
+    img{
       margin-right: 8px;}
   }
 }
@@ -129,7 +129,7 @@
   display: none;
   justify-content: space-between;
   width: 100%;
-  & a {
+  a {
     font-family: Cousine-Bold, sans-serif;
     text-decoration: none;
     color:  $link-dark;
