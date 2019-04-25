@@ -9,16 +9,18 @@ footer {
   &__cards {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 22px;
+    justify-content: space-between;
     a {
       text-decoration: none;
       padding: 14px 22px;
       border: 0;
       outline: 0;
-      margin-right: 3px;
+      //margin-right: 3px;
     }
   }
   &__social {
-    margin-top: 22px;
+    //margin-top: 22px;
     display: flex;
     flex-wrap: wrap;
     a {
@@ -36,7 +38,7 @@ footer {
     font-size: 12px;
     color: $icon-text;
     margin-top: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -86,6 +88,10 @@ footer {
 .contact {
   border-bottom: 1px dashed $separator;
   padding: 40px 28px;
+}
+
+.back-to-top {
+  //padding: 0 20px;
 }
 
 #back-to-top {

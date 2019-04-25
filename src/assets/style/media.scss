@@ -36,32 +36,32 @@
     display: flex;
   }
   .footer-bottom {
-    &__wrapper {
+    //display: flex;
+    //justify-content: space-between;
+    &__flex-container {
       display: flex;
       justify-content: space-between;
+    }
+    &__wrapper {
+      width: 42%;
     }
     &__social {
-      margin-top: 0;
-      width: 49%;
-      display: flex;
       justify-content: space-between;
-      a {
-        margin: 0;
-      }
-    }
-    &__back-to-top {
-      display: flex;
-      justify-content: center;
+      width: 49.5%;
     }
     &__cards {
-      width: 42%;
-      justify-content: space-between;
+      margin-bottom: 0;
     }
     &__copy {
       font-size: 11px;
-      margin-top: -8px;
-      margin-bottom: 25px;
+      margin-bottom: 0;
+      margin-top: 2px;
     }
+  }
+  .back-to-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
   }
 }
 
@@ -93,10 +93,33 @@
     margin-top: 15px;
     margin-bottom: -10px;
   }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    &__wrapper {
+      width: 38%;
+    }
+    &__social {
+      width: 41%;
+    }
+    &__flex-container {
+      width: 94%;
+      justify-content: space-between;
+      margin-right: 15px;
+    }
+    &__copy {
+      font-size: 12px;
+      margin-top: 6px;
+    }
+  }
+  .back-to-top {
+    display: block;
+    margin-top: 14px;
+  }
 }
 
 @media (min-width: 1366px) {
-  .top-bar, .nav-container {
+  .top-bar, .nav-container, footer {
     padding-right: 7.2%;
     padding-left: 7.2%;
   }
@@ -109,6 +132,16 @@
   }
   .logo-pc {
     margin-left: -4px;
+  }
+  .footer-bottom {
+    &__flex-container {
+      width: 100%;
+    }
+  }
+  .back-to-top {
+    position: absolute;
+    bottom: 60px;
+    right: 3%;
   }
 }
 
