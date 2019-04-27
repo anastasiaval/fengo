@@ -16,11 +16,9 @@ footer {
       padding: 14px 22px;
       border: 0;
       outline: 0;
-      //margin-right: 3px;
     }
   }
   &__social {
-    //margin-top: 22px;
     display: flex;
     flex-wrap: wrap;
     a {
@@ -90,19 +88,19 @@ footer {
   padding: 40px 28px;
 }
 
-.back-to-top {
-  //padding: 0 20px;
-}
-
 #back-to-top {
   padding: 12px;
   cursor: pointer;
   border-radius:50px;
   border: 2px solid $button-color;
+  opacity: 0.2;
+  position: fixed;
+  bottom: 15px;
   img{
     filter: brightness(50%) sepia(100) saturate(0);}
   &:hover {
     background: $button-color;
+    opacity: 1;
     img {
       filter: none;
     }

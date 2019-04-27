@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
+const webpack = require("webpack");
 
 function generateHtmlPlugins (templateDir) {
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -72,6 +73,11 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css',
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
         })
     ].concat(htmlPlugins),
     devServer: {
