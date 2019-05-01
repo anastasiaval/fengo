@@ -54,7 +54,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(svg|ttf|woff)$/,
+                test: /\.(svg|ttf|woff|eot)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',

@@ -3,11 +3,13 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Fengo
+        title
+            block title
     body
         .container
             .content
                 include ../components/Header/header
                 .main
+                    block main
             include ../components/Footer/footer
 

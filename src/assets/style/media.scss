@@ -36,8 +36,7 @@
     display: flex;
   }
   .footer-bottom {
-    //display: flex;
-    //justify-content: space-between;
+    padding-bottom: 70px;
     &__flex-container {
       display: flex;
       justify-content: space-between;
@@ -58,10 +57,9 @@
       margin-top: 2px;
     }
   }
-  .back-to-top {
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
+  #back-to-top {
+    left:50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -96,6 +94,7 @@
   .footer-bottom {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
     &__wrapper {
       width: 38%;
     }
@@ -112,9 +111,11 @@
       margin-top: 6px;
     }
   }
-  .back-to-top {
-    display: block;
-    margin-top: 14px;
+  #back-to-top {
+    left: auto;
+    right: 20px;
+    bottom: 45px;
+    transform: none;
   }
 }
 
@@ -137,11 +138,6 @@
     &__flex-container {
       width: 100%;
     }
-  }
-  .back-to-top {
-    position: absolute;
-    bottom: 60px;
-    right: 3%;
   }
 }
 
